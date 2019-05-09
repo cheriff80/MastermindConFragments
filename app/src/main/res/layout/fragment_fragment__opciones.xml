@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:id="@+id/fragmentOpciones"
+    tools:context=".Fragment_Opciones">
+
+    <ImageButton
+        android:id="@+id/ibOpcion1"
+        android:layout_width="@dimen/botonesSeleccion"
+        android:layout_height="0dp"
+        android:layout_marginTop="92dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/azul"
+        android:clickable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <ImageButton
+        android:id="@+id/ibOpcion2"
+        android:layout_width="@dimen/botonesSeleccion"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/naranja"
+        app:layout_constraintStart_toStartOf="@+id/ibOpcion1"
+        app:layout_constraintTop_toBottomOf="@+id/ibOpcion1" />
+
+    <ImageButton
+        android:id="@+id/ibOpcion3"
+        android:layout_width="@dimen/botonesSeleccion"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/rojo"
+        app:layout_constraintStart_toStartOf="@+id/ibOpcion1"
+        app:layout_constraintTop_toBottomOf="@+id/ibOpcion2" />
+
+    <ImageButton
+        android:id="@+id/ibOpcion4"
+        android:layout_width="@dimen/botonesSeleccion"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/verde"
+        app:layout_constraintStart_toStartOf="@+id/ibOpcion3"
+        app:layout_constraintTop_toBottomOf="@+id/ibOpcion3" />
+
+    <ImageButton
+        android:id="@+id/ibOpcion5"
+        android:layout_width="@dimen/botonesSeleccion"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/blanco"
+        app:layout_constraintStart_toStartOf="@+id/ibOpcion4"
+        app:layout_constraintTop_toBottomOf="@+id/ibOpcion4" />
+
+    <ImageButton
+        android:id="@+id/ibOpcion6"
+        android:layout_width="@dimen/botonesSeleccion"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/negro"
+        app:layout_constraintStart_toStartOf="@+id/ibOpcion5"
+        app:layout_constraintTop_toBottomOf="@+id/ibOpcion5" />
+
+    <ImageButton
+        android:id="@+id/btConfirmar"
+        android:layout_width="@dimen/botonesSeleccion"
+        android:layout_height="@dimen/botonesSeleccion"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:src="@android:drawable/checkbox_on_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/ibOpcion6"
+        app:layout_constraintTop_toBottomOf="@+id/ibOpcion6" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragmentSolucion"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment_Solucion">
+
+    <include
+        android:id="@+id/fila0"
+        layout="@layout/fila_juego"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/botonesJuego"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_weight="1" />
+
+    <include
+        android:id="@+id/fila1"
+        layout="@layout/fila_juego"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/botonesJuego"
+        app:layout_constraintBottom_toTopOf="@+id/fila0"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintVertical_weight="1" />
+
+    <include
+        android:id="@+id/fila2"
+        layout="@layout/fila_juego"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/botonesJuego"
+        app:layout_constraintBottom_toTopOf="@+id/fila1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_weight="1" />
+
+    <include
+        android:id="@+id/fila3"
+        layout="@layout/fila_juego"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/botonesJuego"
+        app:layout_constraintBottom_toTopOf="@+id/fila2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_weight="1" />
+
+    <include
+        android:id="@+id/fila4"
+        layout="@layout/fila_juego"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/botonesJuego"
+        app:layout_constraintBottom_toTopOf="@+id/fila3"
+        app:layout_constraintVertical_weight="1"
+        tools:layout_editor_absoluteX="8dp" />
+
+    <include
+        android:id="@+id/fila5"
+        layout="@layout/fila_juego"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/botonesJuego"
+        app:layout_constraintBottom_toTopOf="@+id/fila4"
+        app:layout_constraintVertical_weight="1"
+        tools:layout_editor_absoluteX="8dp" />
+
+    <include
+        android:id="@+id/fila6"
+        layout="@layout/fila_juego"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/botonesJuego"
+        app:layout_constraintBottom_toTopOf="@+id/fila5"
+        app:layout_constraintVertical_weight="1"
+        tools:layout_editor_absoluteX="8dp" />
+
+    <include
+        android:id="@+id/fila7"
+        layout="@layout/fila_juego"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/botonesJuego"
+        app:layout_constraintBottom_toTopOf="@+id/fila6"
+        app:layout_constraintVertical_weight="1"
+        tools:layout_editor_absoluteX="8dp" />
+
+    <include
+        android:id="@+id/fila8"
+        layout="@layout/fila_juego"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/botonesJuego"
+        app:layout_constraintBottom_toTopOf="@+id/fila7"
+        app:layout_constraintVertical_weight="1"
+        tools:layout_editor_absoluteX="8dp" />
+
+    <include
+        android:id="@+id/fila9"
+        layout="@layout/fila_juego"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/botonesJuego"
+        app:layout_constraintBottom_toTopOf="@id/fila8"
+        app:layout_constraintVertical_weight="1"
+        tools:layout_editor_absoluteX="8dp" />
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayoutTableroSuperior"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/fila9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_weight="4">
+
+
+        <TextView
+            android:id="@+id/tvPuntuacion"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:text="@string/score"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/ivSolucion1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/ivSolucion1" />
+
+        <ImageView
+            android:id="@+id/ivSolucion1"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/botonesJuego"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toTopOf="@+id/constraintLayoutTableroSuperior"
+            app:layout_constraintStart_toEndOf="@+id/tvPuntuacion"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayoutTableroSuperior"
+            app:layout_constraintVertical_bias="0.501"
+            app:srcCompat="@drawable/negro" />
+
+        <ImageView
+            android:id="@+id/ivSolucion2"
+            android:layout_width="@dimen/botones"
+            android:layout_height="@dimen/botonesJuego"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/negro"
+            app:layout_constraintBottom_toTopOf="@+id/constraintLayoutTableroSuperior"
+            app:layout_constraintStart_toEndOf="@+id/ivSolucion1"
+            app:layout_constraintTop_toTopOf="@+id/ivSolucion1"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/ivSolucion3"
+            android:layout_width="@dimen/botones"
+            android:layout_height="@dimen/botonesJuego"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/negro"
+            app:layout_constraintBottom_toTopOf="@+id/constraintLayoutTableroSuperior"
+            app:layout_constraintStart_toEndOf="@+id/ivSolucion2"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayoutTableroSuperior"
+            app:layout_constraintVertical_bias="0.501" />
+
+        <ImageView
+            android:id="@+id/ivSolucion4"
+            android:layout_width="@dimen/botones"
+            android:layout_height="@dimen/botonesJuego"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/negro"
+            app:layout_constraintBottom_toTopOf="@+id/constraintLayoutTableroSuperior"
+            app:layout_constraintStart_toEndOf="@+id/ivSolucion3"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayoutTableroSuperior"
+            app:layout_constraintVertical_bias="0.501" />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</android.support.constraint.ConstraintLayout>

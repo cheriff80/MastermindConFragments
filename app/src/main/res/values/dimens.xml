@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margenBoton">10dp</dimen>
+    <dimen name="paddingHorizontal">16dp</dimen>
+    <dimen name="paddingVertical">5dp</dimen>
+    <dimen name="botonesJuego">48dp</dimen>
+    <dimen name="botonesSeleccion">72dp</dimen>
+    <dimen name="botones">56dp</dimen>
+</resources>
